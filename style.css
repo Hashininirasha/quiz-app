@@ -1,11 +1,18 @@
 body{
 	margin: 0;
 	font-size: 16px; 
-	background-color:#AD58F4; 
+	background-color:#971806; 
 }
 *{
 	box-sizing:border-box;
 	margin: 0;
 	padding: 0;
 	outline: none;
+}
+.custom-box{
+	max-width: 700px;
+	background-color: #090100;
+	margin: 40px auto;
+	padding: 30px;
+	border-radius: 10px;
 }
