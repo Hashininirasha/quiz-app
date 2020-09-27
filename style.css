@@ -23,3 +23,16 @@ body{
 	color:#000000;
 	font-weight: 400;
 }
+.home-box p span{
+	font-weight: 500;
+}
+.btn{
+	padding: 15px 45px;
+	background-color: #D4E6F1;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	font-family: "Times new Roman";
+	font-size: 16px;
+	cursor: pointer;
+}
