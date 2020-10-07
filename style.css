@@ -39,3 +39,20 @@ body{
 	font-size: 16px;
 	cursor: pointer;
 }
+.quiz-box .question_number{
+	font-size: 18px;
+	color: #ABE899;
+	font-weight: 600;
+	border-bottom: 1px solid #E8B199;
+	padding-bottom: 10px;
+	line-height: 25px;
+}
+.quiz-box .question_text{
+
+	font-size: 22px;
+	color:#ffffff;
+	line-height: 28px;
+	font-weight: 400;
+	padding: 20px 0;
+	margin: 0; 
+}
