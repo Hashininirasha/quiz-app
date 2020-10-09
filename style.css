@@ -43,6 +43,16 @@ body{
 	font-family: "Times new Roman";
 	font-size: 16px;
 	cursor: pointer;
+	display: inline-block;
+}
+.quiz-box .question_number,
+.quiz-box .question_text,
+.quiz-box .option-container,
+
+.quiz-box .next-question-btn,
+.quiz-box .answer-indicator{
+	width: 100%;
+	float: left;
 }
 .quiz-box .question_number{
 	font-size: 18px;
@@ -61,10 +71,7 @@ body{
 	padding: 20px 0;
 	margin: 0; 
 }
-.quiz-box .option-container{
 
-
-}
 .quiz-box .option-container .option{
 	background-color: #cccccc;
 	padding: 15px;
@@ -74,4 +81,24 @@ body{
 	border-radius: 5px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	text-transform: capitalize;
 }
+.quiz-box .btn{
+	margin: 15px 0;
+
+}
+.quiz-box .answer-indicator{
+	border-top: 3px solid #cccccc;
+	}
+.quiz-box .answer-indicator div{
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	background-color: #cccccc;
+	border-radius: 50%;
+	margin-right: 3px;
+	margin-top: 5px;
+
+
+}
+
