@@ -16,6 +16,12 @@ body{
 	padding: 30px;
 	border-radius: 10px;
 }
+.custom-box::before,
+.custom-box::after{
+	content: '';
+	clear: both;
+	display: table;
+}
 .custom-box .hide{
 	display: none;
 
