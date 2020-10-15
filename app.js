@@ -13,15 +13,30 @@ function setavailableQ(){
 	for(let i=0;i<totalQ;i++){
 		availablequestions.push(quiz[i])
 	}
+	}
 function getnewQ(){
 	question_number.innerHTML="Question"+(questioncounter+1)+ "of" +quiz.length;
+	const questionindex=availablequestions[Math.floor(Math.random()*availablequestions.length)]
+	currentquestions=questionindex;
+	question_text.innerHTML=currentquestions.q;
+	questioncounter++
 
+
+	//console.log(questionindex)
 
 
 }
-
-
+function next(){
+	if (questioncounter===quiz.length){
+		console.log("Quiz Over")
+	}
+	else{
+		getnewQ();
+	}
 }
+
+
+
 window.onload=function(){
 	setavailableQ();
 	getnewQ()
