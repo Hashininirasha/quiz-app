@@ -1,14 +1,15 @@
 
 
-const question_number=document.querySelecter(",question_number");
-const question_text=document.querySelecter(",question_text");
-const question_container=document.querySelecter(",option-container");
+const question_number=document.querySelecter(".question_number");
+const question_text=document.querySelecter(".question_text");
+const question_container=document.querySelecter(".option-container");
 
 let questioncounter=0;
 let currentquestions;
-let availablequestions=[]
+let availablequestions=[];
+let availableoption=[];
 
-function setavailableQ(){
+function setavailablequestions(){
 	const totalQ=quiz.length;
 	for(let i=0;i<totalQ;i++){
 		availablequestions.push(quiz[i])
@@ -16,7 +17,7 @@ function setavailableQ(){
 	}
 function getnewQ(){
 	question_number.innerHTML="Question"+(questioncounter+1)+ "of" +quiz.length;
-	const questionindex=availablequestions[Math.floor(Math.random()*availablequestions.length)]
+	const questionindex=availablequestions[Math.floor(Math.random()*availablequestions.length)];
 	currentquestions=questionindex;
 	question_text.innerHTML=currentquestions.q;
 	const index1=availablequestions.indexof(questionindex);
@@ -39,6 +40,16 @@ function getnewQ(){
 
 
 }
+function getelement(element){}
+	const id =element.id;
+	if(id===currentquestions.answer){
+		console.log("Anser is correct");
+	}
+	else {
+		console.log("Anser is worng");
+	}
+
+	}
 function next(){
 	if (questioncounter===quiz.length){
 		console.log("Quiz Over")
