@@ -19,10 +19,23 @@ function getnewQ(){
 	const questionindex=availablequestions[Math.floor(Math.random()*availablequestions.length)]
 	currentquestions=questionindex;
 	question_text.innerHTML=currentquestions.q;
+	const index1=availablequestions.indexof(questionindex);
+	availablequestions.splice(index1,1);
+	const optionlen=currentquestions.option.length
+	for(let i=0;i<optionlen;i++){
+		availableoption.push(i)
+	}
+	for(let i=0;i<optionlen;i++){
+		const option=document.createElement("div");
+		option.innerHTML=currentquestions.options[i];
+		option.id=i;
+		option.className="option";
+		option-container.appendChild(option)
+	}
 	questioncounter++
 
 
-	//console.log(questionindex)
+	
 
 
 }
