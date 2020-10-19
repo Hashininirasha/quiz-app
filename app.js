@@ -40,7 +40,7 @@ function getnewQ(){
 
 
 }
-function getelement(element){}
+function getelement(element){
 	const id =element.id;
 	if(id===currentquestions.answer){
 		console.log("Anser is correct");
@@ -48,8 +48,15 @@ function getelement(element){}
 	else {
 		console.log("Anser is worng");
 	}
-
+	unclickbleOptions();
+}
+function unclickbleOptions(){
+	const optionlen=option-container.chlidern.length;
+	for(let i=0;i<optionlen;i++){
+		option-container.chlidern[i].classList.add("already-answered");
 	}
+}
+	
 function next(){
 	if (questioncounter===quiz.length){
 		console.log("Quiz Over")
