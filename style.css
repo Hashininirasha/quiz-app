@@ -90,6 +90,17 @@ body{
 	text-transform: capitalize;
 	animation: fadeIn 0.3s ease forwards;
 }
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+	}
+}
+
 .quiz-box .btn{
 	margin: 15px 0;
 
