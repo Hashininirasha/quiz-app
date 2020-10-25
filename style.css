@@ -88,6 +88,7 @@ body{
 	margin-bottom: 10px;
 	cursor: pointer;
 	text-transform: capitalize;
+	opacity: 0;
 	animation: fadeIn 0.3s ease forwards;
 }
 
