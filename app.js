@@ -39,6 +39,7 @@ function getnewQ(){
 		animationDelay=animationDelay+0.2;
 		option.className="option";
 		option-container.appendChild(option)
+		option.setAttribute("onclick","getResult(this)");
 	}
 	questioncounter++
 
