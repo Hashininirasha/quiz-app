@@ -26,15 +26,15 @@ function getnewQ(){
 	for(let i=0;i<optionlen;i++){
 		availableoption.push(i)
 	}
+	let animationDelay=0.2;
 	for(let i=0;i<optionlen;i++){
 		const optionIndex=availableoptions[Math.floor(Math.random()*availablequestions.length)];
 		const index2=availableoptions.indexof(optionIndex);
 		availablequestions.splice(index2,1);
 		console.log(optionIndex)
-		console.log(availableoptions)
 		const option=document.createElement("div");
-		option.innerHTML=currentquestions.options[i];
-		option.id=i;
+		option.innerHTML=currentquestions.options[optionIndex];
+		option.id=optionIndex;
 		option.className="option";
 		option-container.appendChild(option)
 	}
