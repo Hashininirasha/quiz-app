@@ -35,6 +35,8 @@ function getnewQ(){
 		const option=document.createElement("div");
 		option.innerHTML=currentquestions.options[optionIndex];
 		option.id=optionIndex;
+		option.style.animationDelay=animationDelay+'s';
+		animationDelay=animationDelay+0.2;
 		option.className="option";
 		option-container.appendChild(option)
 	}
