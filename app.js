@@ -27,6 +27,11 @@ function getnewQ(){
 		availableoption.push(i)
 	}
 	for(let i=0;i<optionlen;i++){
+		const optionIndex=availableoptions[Math.floor(Math.random()*availablequestions.length)];
+		const index2=availableoptions.indexof(optionIndex);
+		availablequestions.splice(index2,1);
+		console.log(optionIndex)
+		console.log(availableoptions)
 		const option=document.createElement("div");
 		option.innerHTML=currentquestions.options[i];
 		option.id=i;
